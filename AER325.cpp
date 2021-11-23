@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+//Javier Verde Marín
 void resuelve(int numv, int numc, int total, string solParcial, string &sol) {
 
 	if (solParcial.size() == total) {
