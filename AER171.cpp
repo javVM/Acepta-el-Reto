@@ -15,12 +15,12 @@ int resuelveCaso(int & N, const int cordillera[]) {
     //(res = # k : (N  > k > i) : cordillera[k] > maximoAnterior(cordillera,N ,k)
     // ^ (maximo = k : (N > k > i) : maximoAnterior(cordillera,N,k))
 	while (i >= 0) {
-			if (cordillera[i] > max) {
-				res++;
-				max = cordillera[i];
-			}
-		
-		i--;
+		if (cordillera[i] > max) {
+			res++;
+			max = cordillera[i];
+		}
+
+	 i--;
 	}
 
 	return res;
